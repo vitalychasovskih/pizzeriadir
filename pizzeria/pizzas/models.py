@@ -14,7 +14,7 @@ class Pizza(models.Model):
 
 class Topping(models.Model):
     """A topping for pizza"""
-    pizza = models.ForeignKey(Pizza, on_delete=models.CASCADE) # Need to add on_delete = Cascade
+    pizza = models.ForeignKey(Pizza, on_delete=models.CASCADE)
     name = models.CharField(max_length=30)
 
 # # Maybe I can not use it
